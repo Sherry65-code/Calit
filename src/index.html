@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div id="body">
+    <span class="title">CALIT</span>
+    <div id="titlebar"></div><button class="close" onclick="exitApp()"></button>
+    <input type="text" id="screen" autofocus spellcheck="false" disabled>
+    <div id="bottomdisplay" class="gridview">
+      <button class="cbut" onclick="addText('7')">7</button>
+      <button class="cbut" onclick="addText('8')">8</button>
+      <button class="cbut" onclick="addText('9')">9</button>
+      <button class="cbut" onclick="addText('*')">x</button>
+      <button class="cbut" onclick="addText('4')">4</button>
+      <button class="cbut" onclick="addText('5')">5</button>
+      <button class="cbut" onclick="addText('6')">6</button>
+      <button class="cbut" onclick="addText('/')">÷</button>
+      <button class="cbut" onclick="addText('1')">1</button>
+      <button class="cbut" onclick="addText('2')">2</button>
+      <button class="cbut" onclick="addText('3')">3</button>
+      <button class="cbut" onclick="addText('-')">-</button>
+      <button class="cbut" onclick="addText('0')">0</button>
+      <button class="cbut" onclick="addText('+')">+</button>
+      <button class="cbut" onclick="remText()">C</button>
+      <button class="cbut ld" onclick="calculate()">=</button>
+    </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>

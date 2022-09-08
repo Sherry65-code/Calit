@@ -1,0 +1,124 @@
+@font-face {
+  font-family: michroma;
+  src: url('./Michroma-Regular.ttf');
+}
+#body{
+  background-color: rgba(11, 11, 19, 0.979);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 18px;
+  transition: all ease-in-out 1s;
+}
+#titlebar{
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 30px;
+  padding: 20px 0px;
+  z-index: 20;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  -webkit-user-select: none;
+  -webkit-app-region: drag; 
+
+}
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px 30px;
+  border: none;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 4px;
+  background-color: rgba(240, 248, 255, 0);
+  background-image: url('./close.png');
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: center;
+  transition: all ease-in-out 0.5s;
+  z-index: 40;
+
+}
+.close:hover{
+  background-color: rgb(255, 112, 112);
+}
+*{
+  overflow: hidden;
+  outline: none;
+}
+#screen{
+  left: 1px;
+  right: 1px;
+  border: none;
+  top: 60px;
+  position: absolute;
+  padding: 20px;
+  font-size: 30px;
+  font-family: michroma;
+  font-weight: 300;
+  /* background-color: rgba(240, 248, 255, 0); */
+  /* color: aliceblue; */
+  text-align: right;
+  background-image: linear-gradient(60deg, #E21143, #FFB03A);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#screen::selection{
+  background-color: rgba(226, 17, 66, 0.336);
+}
+#bottomdisplay{
+  background-color: rgba(255, 0, 0, 0);
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
+  top: 180px;
+}
+.cbut{
+  /* width: 24%; */
+  /* height: 110px; */
+  border: none;
+  border-radius: 18px;
+  font-family: michroma;
+  background-color: rgb(29, 29, 41);
+  color: aliceblue;
+  transition: all ease-in-out 0.1s;
+}
+.cbut:hover{
+  box-shadow: 0px 0px 20px 0px black;
+  transform: scale(1.1) rotate(-20deg);
+  background: linear-gradient( to right, rgb(29, 29, 41),rgb(71, 71, 94));
+
+}
+.gridview{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%; 
+  grid-template-rows: 20% 20% 20% 20%; 
+  row-gap: 6%;
+  column-gap: 6.5%;
+  overflow: visible;
+}
+.ld{
+  background: linear-gradient( 60deg, #ff7797, #ffc671);
+  font-size: 20px;
+}
+.ld:hover{
+  background: linear-gradient( 60deg, #E21143, #FFB03A);
+
+}
+::selection{
+  user-select: none;
+}
+.title{
+  font-family: michroma;
+  background-image: linear-gradient(60deg, #E21143, #FFB03A);
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
